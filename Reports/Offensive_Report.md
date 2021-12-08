@@ -25,8 +25,8 @@ WORDPRESS SCREENSHOT
 
 This scan identifies the services below as potential points of entry:
 - Target 1
-  - 22 - SSH
-  - 80 - HTTP
+  - `port 22` - SSH
+  - `port 80` - HTTP
 
 _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
@@ -71,7 +71,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
 Step 5: Find the MySQL database password.
 
-- `cat /var/www/html/wordpress/wp-config.php`
+    - `cat /var/www/html/wordpress/wp-config.php`
+    - [MySQL DB Password](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_MySQL_DB_password.PNG "MySQL DB Password")
 
   - Flag #3
 
