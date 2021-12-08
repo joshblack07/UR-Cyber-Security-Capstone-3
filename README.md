@@ -1,8 +1,8 @@
-#Capstone Project 3: Red Team, Blue Team, and Network Forensic Analysis
+# Capstone Project 3: Red Team, Blue Team, and Network Forensic Analysis
 
 Summary: This capstone outlines the process a security engineer would use to set alerts and analyze traffic using various systems. Vulnerable machines are attacked to test the alerts and produce auditable traffic.
 
-##Capstone Breakdown
+## Capstone Breakdown
 - Defensive Security
   - Refer back to Capstone #2 for Kibana alerts and thresholds.
   - Configure and implement alerts and thresholds. 
@@ -15,7 +15,7 @@ Summary: This capstone outlines the process a security engineer would use to set
   - Explain the actions that users are doing on the network.
   - Collect corporate misuse evidence
 
-##Lab Environment
+## Lab Environment
 
 NETWORK DIAGRAM
 
