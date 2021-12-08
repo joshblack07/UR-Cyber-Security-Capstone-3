@@ -49,9 +49,9 @@ Step 3: Enumerate the WordPress site.
 
 Step 4: Use SSH to gain a user shell
 
-- `ssh michael@192.168.1.110`
-- `Guess-Enter password: michael`  → success
-- [Michael login results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Michael login results")
+  - `ssh michael@192.168.1.110`
+  - `Guess-Enter password: michael`  → success
+  - [Michael login results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Michael login results")
 
 
 ### Exploitation
