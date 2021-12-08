@@ -71,10 +71,22 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
 Step 5: Find the MySQL database password.
 
-    - `cat /var/www/html/wordpress/wp-config.php`
-    - [MySQL DB Password](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_MySQL_DB_password.PNG "MySQL DB Password")
+- `cat /var/www/html/wordpress/wp-config.php`
+- Password: R@v3nSecurity
+- [MySQL DB Password](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_MySQL_DB_password.PNG "MySQL DB Password")
 
-  - Flag #3
+Step 6: Use the credentials to log into MySQL and dump WordPress user password hashes.
+- michael@target1:~$ `mysql -u root -p`
+- Enter password: `R@v3nSecurity`
+- [MySQL Login](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_mySQL_login.PNG "MySQL Login")
+
+- `mysql> show databases;`
+- [mysql show databases](mysql "mysql show databases")
+- `mysql> use wordpress;`
+- [mysql wordpress DB](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_mySQL_wordpress_db.PNG "mysql wordpress DB")
+
+
+- Flag #3
 
     - **Exploit Used**
       - _TODO: Identify the exploit used_
