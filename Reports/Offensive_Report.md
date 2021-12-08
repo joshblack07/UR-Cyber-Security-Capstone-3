@@ -1,11 +1,11 @@
-Red Team: Summary of Operations
+# Red Team: Summary of Operations
 
-Table of Contents
+## Table of Contents
 - Exposed Services
 - Critical Vulnerabilities
 - Exploitation
 
-Exposed Services
+### Exposed Services
 
 Nmap scan results for each machine reveal the below services and OS details:
 
