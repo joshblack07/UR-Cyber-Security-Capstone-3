@@ -24,7 +24,7 @@
 
 The target of this attack was: `Target 1` IP: '192.168.1.110'
 
-Target 1 is an Apache web server and has SSH enabled, so 'port 80' and 'port 22' are possible ports of entry for attackers. As such, the following alerts have been implemented:
+Target 1 is an Apache web server and has SSH enabled, so `port 80` and `port 22` are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
 ### Monitoring the Targets
 
@@ -34,7 +34,7 @@ Traffic to these services should be carefully monitored. To this end, we have im
 
 The alert Excessive HTTP Errors is implemented as follows:
 
-- 'WHEN count() GROUPED OVER top 5 'http.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes'
+- `WHEN count() GROUPED OVER top 5 'http.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes`
 
 - Metric:
   - WHEN count() GROUPED OVER top 5 ‘http.response.status_code’
@@ -50,7 +50,7 @@ The alert Excessive HTTP Errors is implemented as follows:
 
 The alert HTTP Request Size Monitor is implemented as follows:
 
-- 'WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute'
+- `WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute`
 
 - Metric:
   - WHEN sum() of http.request.bytes OVER all documents
@@ -65,7 +65,7 @@ The alert HTTP Request Size Monitor is implemented as follows:
 
 The alert CPU Usage Monitor is implemented as follows:
 
-- 'WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes'
+- `WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes`
 
 - Metric:
   - WHEN max() OF system.process.cpu.total.pct OVER all documents
