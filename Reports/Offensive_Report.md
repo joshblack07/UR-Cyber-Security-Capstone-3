@@ -9,10 +9,10 @@ Exposed Services
 
 Nmap scan results for each machine reveal the below services and OS details:
 
-nmap -sP 192.168.1.1-255
+`nmap -sP 192.168.1.1-255`
 
 
-nmap -sV 192.168.1.110
+`nmap -sV 192.168.1.110`
 
 Due to port 80 being open, we went directly to the website via port 80 (192.168.1.110:80) and discovered that Raven Security is a WordPress Commenter, giving us the clue to run the wordpress scan. 
 
@@ -40,14 +40,14 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - `flag1.txt`: `flag1.txt` hash value:
     - **Exploit Used**
       - _TODO: Identify the exploit used_
-      - grep -RE flag html
+      - `grep -RE flag html`
 
   - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
 
 
   - **Exploit Used**
-      - ssh michael@192.168.1.110
-      - Guess-Enter password: michael  → success
+    - `ssh michael@192.168.1.110`
+    - `Guess-Enter password: michael`  → success
 
 Flag3.txt:
 
