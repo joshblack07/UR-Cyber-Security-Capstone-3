@@ -10,9 +10,10 @@
 Nmap scan results for each machine reveal the below services and OS details:
 
 `nmap -sP 192.168.1.1-255`
-
+[nmap IP Scan results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_nmap_IPs_Target1.PNG "nmap IP Scan results")
 
 `nmap -sV 192.168.1.110`
+[nmap Port Scan results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_nmap_Ports_Target1.PNG "nmap Port Scan results")
 
 Due to port 80 being open, we went directly to the website via port 80 (192.168.1.110:80) and discovered that Raven Security is a WordPress Commenter, giving us the clue to run the wordpress scan. 
 
@@ -48,6 +49,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - **Exploit Used**
     - `ssh michael@192.168.1.110`
     - `Guess-Enter password: michael`  → success
+
+[Michael login results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Michael login results")
 
 Flag3.txt:
 
