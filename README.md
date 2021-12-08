@@ -21,8 +21,8 @@ Summary: This capstone outlines the process a security engineer would use to set
 
 | Name      | IP Address |OS|Purpose |
 |----------|------------|-|----------------|
-|Host| 192.168.1.1 | Windows |Azure VM Host to RDP into nested machines|
-|ELK|  192.168.1.100| Linux |Set Alerts, Kibana Dashboard|
+|Host| 192.168.1.1 | Microsoft Windows |Azure VM Host to RDP into nested machines|
+|ELK|  192.168.1.100| Linux Ubuntu |Set Alerts, Kibana Dashboard|
 |Capstone| 192.168.1.105 | Linux |Alert Testing, Attack Target|
-|Target1| 192.168.1.110| Linux |Vulnerable Wordpress, Attack 2nd|
+|Target1| 192.168.1.110| Linux Debian 3.16.57 |Vulnerable Wordpress, Attack 2nd|
 |Kali | 192.168.1.110| Linux |Tools, Pen Test Machine|
