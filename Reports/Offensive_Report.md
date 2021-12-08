@@ -43,15 +43,15 @@ Step 3: Enumerate the WordPress site.
 - `wpscan –-url http://192.168.1.110/wordpress -eu`
 
 - Users Identified
-  - steven
-  - michael
-  - [Enumeration Output](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/Kali_Users_Identified.PNG "Enumeration Output")
+- steven
+- michael
+- [Enumeration Output](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/Kali_Users_Identified.PNG "Enumeration Output")
 
 Step 4: Use SSH to gain a user shell
 
-  - `ssh michael@192.168.1.110`
-  - `Guess-Enter password: michael`  → success
-  - [Michael login results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Michael login results")
+- `ssh michael@192.168.1.110`
+- `Guess-Enter password: michael`  → success
+- [Michael login results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Michael login results")
 
 
 ### Exploitation
