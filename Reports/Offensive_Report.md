@@ -7,7 +7,7 @@
 
 ### Exposed Services
 
-Nmap scan results for each machine reveal the below services and OS details:
+Step 1: Scan the network to identify the IP addresses of Target 1
 
 `nmap -sP 192.168.1.1-255`
 
@@ -15,10 +15,13 @@ Nmap scan results for each machine reveal the below services and OS details:
 
 `nmap -sV 192.168.1.110`
 
+Step 2: Document all exposed ports and services.
+
 [nmap Port Scan results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_nmap_Ports_Target1.PNG "nmap Port Scan results")
 
-Due to port 80 being open, we went directly to the website via port 80 (192.168.1.110:80) and discovered that Raven Security is a WordPress Commenter, giving us the clue to run the wordpress scan. 
+Due to `port 80` being open, we went directly to the website via p`ort 80` `192.168.1.110:80` and discovered that Raven Security is a WordPress Commenter, giving us the clue to run the wordpress scan. 
 
+WORDPRESS SCREENSHOT
 
 This scan identifies the services below as potential points of entry:
 - Target 1
@@ -34,6 +37,22 @@ The following vulnerabilities were identified on each target:
   - Vulnerabilities
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
+
+Step 3: Enumerate the WordPress site. 
+
+- `wpscan –-url http://192.168.1.110/wordpress -eu`
+
+- Users Identified
+  - steven
+  - michael
+  - [Enumeration Output](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/Kali_Users_Identified.PNG "Enumeration Output")
+
+Step 4: Use SSH to gain a user shell
+
+- `ssh michael@192.168.1.110`
+- `Guess-Enter password: michael`  → success
+- [Michael login results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Michael login results")
+
 
 ### Exploitation
 _TODO: Fill out the details below. Include screenshots where possible._
@@ -53,10 +72,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - _TODO: Identify the exploit used_
       - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
 
-  - **Exploit Used**
-    - `ssh michael@192.168.1.110`
-    - `Guess-Enter password: michael`  → success
-    - [Michael login results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Michael login results")
+
 
   - Flag #3
 
