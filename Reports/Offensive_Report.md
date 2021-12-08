@@ -50,7 +50,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
   - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
 
-      - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
+        - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
 
   - **Exploit Used**
     - `ssh michael@192.168.1.110`
