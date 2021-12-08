@@ -49,7 +49,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
 
   - Flag #2
-
+    - **Exploit Used**
+      - _TODO: Identify the exploit used_
       - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
 
   - **Exploit Used**
