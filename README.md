@@ -26,3 +26,13 @@ Summary: This capstone outlines the process a security engineer would use to set
 |Capstone| 192.168.1.105 | Linux |Alert Testing, Attack Target|
 |Target1| 192.168.1.110| Linux Debian 3.16.57 |Vulnerable Wordpress, Attack 2nd|
 |Kali | 192.168.1.110| Linux |Tools, Pen Test Machine|
+
+
+## Group
+
+- [Josh Black](https://github.com/joshblack07)
+- [Laura Pratt](https://github.com/laurapratt87)
+- [Courtney Templeton](https://github.com/cltempleton1127)
+- [Robbie Drescher](https://github.com/RobDresch)
+- Julian Baker
+
