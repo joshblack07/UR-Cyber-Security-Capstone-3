@@ -40,7 +40,7 @@ _TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: `flag1.txt` hash value:
+  - Flag #1
     - **Exploit Used**
       - _TODO: Identify the exploit used_
       - `grep -RE flag html`
@@ -48,16 +48,16 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - [Flag 1](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag1.PNG "Flag 1")
 
 
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+  - Flag #2
 
-        - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
+      - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
 
   - **Exploit Used**
     - `ssh michael@192.168.1.110`
     - `Guess-Enter password: michael`  → success
     - [Michael login results](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Michael login results")
 
-  - `flag3.txt`:
+  - Flag #3
 
     - **Exploit Used**
       - _TODO: Identify the exploit used_
@@ -65,7 +65,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
       - [Flag 3](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_mySQL_wp_posts_flags.PNG "Flag 3")
       
-  - `flag4.txt`:
+  - Flag #4
 
     - **Exploit Used**
       - _TODO: Identify the exploit used_
