@@ -17,7 +17,7 @@ Summary: This capstone outlines the process a security engineer would use to set
 
 ## Lab Environment
 
-(NETWORK_DIAGRAM_IMAGE)
+![Network Diagram](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/final-project-setup.png "Network Diagram")
 
 | Name      | IP Address |OS|Purpose |
 |----------|------------|-|----------------|
