@@ -59,20 +59,19 @@ _TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - Flag #1
-    - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - `grep -RE flag html`
-
-      - [Flag 1](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag1.PNG "Flag 1")
+  - Flag #1 {b9bbcb33e11b80be759c4e844862482d}
+    - `grep -RE flag html`
+    - [Flag 1](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag1.PNG "Flag 1")
 
 
-  - Flag #2
-    - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
+  - Flag #2 {fc3fd58dcdad9ab23faca6e9a36e581c} 
+    - `cd /var/www`
+    - `cat flag2.txt`
+    - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
 
+Step 5: Find the MySQL database password.
 
+- `cat /var/www/html/wordpress/wp-config.php`
 
   - Flag #3
 
