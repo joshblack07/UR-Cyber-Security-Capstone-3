@@ -19,10 +19,10 @@ Summary: This capstone outlines the process a security engineer would use to set
 
 (NETWORK_DIAGRAM_IMAGE)
 
-| Name      | IP Address |Purpose |
-|----------|------------|-----------------|
-|Host|  |Azure VM Host to RDP into nested machines|
-|ELK|  192.168.1.100|Set Alerts, Kibana Dashboard|
-|Capstone| 192.168.1.105 |Alert Testing, Attack Target|
-|Target1| 192.168.1.110|Vulnerable Wordpress, Attack 2nd|
-|Kali | 192.168.1.110|Tools, Pen Test Machine|
+| Name      | IP Address |OS|Purpose |
+|----------|------------|-|----------------|
+|Host|  | Windows |Azure VM Host to RDP into nested machines|
+|ELK|  192.168.1.100| Linux |Set Alerts, Kibana Dashboard|
+|Capstone| 192.168.1.105 | Linux |Alert Testing, Attack Target|
+|Target1| 192.168.1.110| Linux |Vulnerable Wordpress, Attack 2nd|
+|Kali | 192.168.1.110| Linux |Tools, Pen Test Machine|
