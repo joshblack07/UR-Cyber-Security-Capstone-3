@@ -17,7 +17,7 @@ Summary: This capstone outlines the process a security engineer would use to set
 
 ## Lab Environment
 
-(NETWORK DIAGRAM)
+(NETWORK_DIAGRAM_IMAGE)
 
 | Name     | Function | IP Address | Operating System |Purpose |
 |----------|----------|------------|------------------|-----------------|
