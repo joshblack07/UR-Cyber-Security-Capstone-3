@@ -21,7 +21,7 @@ Summary: This capstone outlines the process a security engineer would use to set
 
 | Name      | IP Address |Purpose |
 |----------|------------|-----------------|
-|Host|  NEED|Azure VM Host to RDP into nested machines|
+|Host|  |Azure VM Host to RDP into nested machines|
 |ELK|  192.168.1.100|Set Alerts, Kibana Dashboard|
 |Capstone| 192.168.1.105 |Alert Testing, Attack Target|
 |Target1| 192.168.1.110|Vulnerable Wordpress, Attack 2nd|
