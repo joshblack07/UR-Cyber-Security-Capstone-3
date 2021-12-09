@@ -21,7 +21,7 @@ Step 2: Document all exposed ports and services.
 
 Due to `port 80` being open, we went directly to the website via p`ort 80` `192.168.1.110:80` and discovered that Raven Security is a WordPress Commenter, giving us the clue to run the wordpress scan. 
 
-WORDPRESS SCREENSHOT
+[WordPress Screenshot](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wordpress_port80_raven_security.PNG")
 
 This scan identifies the services below as potential points of entry:
 - Target 1
