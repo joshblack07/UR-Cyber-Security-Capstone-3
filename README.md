@@ -11,7 +11,7 @@ Summary: This capstone outlines the process a security engineer would use to set
   - Attack a machine on the network.
   - Verify that the Kibana rules work as expected.
 - Network Forensics (Report)
-  - Capture and analyze traffic on the virtual network with Wireshark. 
+  - Capture and analyze traffic on the virtual [network](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/final-project-setup.png "Network Diagram") with Wireshark. 
   - Explain the actions that users are doing on the network.
   - Collect corporate misuse evidence
 
