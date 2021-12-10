@@ -76,3 +76,18 @@ The alert CPU Usage Monitor is implemented as follows:
 - Reliability:
   - The alert is highly reliable. Even if there isn’t a malicious program running this can still help determine where to improve on CPU usage.
 
+### Suggestions for Going Further
+
+The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
+
+- Vulnerability 1: Excessive HTTP Errors
+  - **Patch**: Configure Windows Group Policies to have a strong password policy for accounts.
+  - **Why It Works**: Having a strong password will make it harder to guess or brute force.
+  
+- Vulnerability 2: HTTP Request Size Monitor
+  - **Patch**: Use of modern intrusion prevention and threate management systems that include firewalls, VPN's, content filtering, and load balancing.  These operate together to provide continual and consistent network security, preventing denial of service attacks.  This encompasses everything from spotting any network traffice irregularities to stopping the attack.
+  - **Why It Works**: Monitoring request sizes of HTTP packets can minimize denial of service threats.
+  
+- Vulnerability 3: CPU Usage Monitor
+  - **Patch**: Using Host Intrustion Prevention System to identify potential denial of service attacks.
+  - **Why It Works**: This preventative measure can alert and stop malware by monitoring processing behavior.
