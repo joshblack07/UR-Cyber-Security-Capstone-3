@@ -1,9 +1,12 @@
-Network Analysis
-Time Thieves
+# Network Analysis
+## Time Thieves
+
 At least two users on the network have been wasting time on YouTube. Usually, IT wouldn't pay much mind to this behavior, but it seems these people have created their own web server on the corporate network. So far, Security knows the following about these time thieves:
-They have set up an Active Directory network.
-They are constantly watching videos on YouTube.
-Their IP addresses are somewhere in the range 10.6.12.0/24.
+
+- They have set up an Active Directory network.
+- They are constantly watching videos on YouTube.
+ -Their IP addresses are somewhere in the range 10.6.12.0/24.
+
 You must inspect your traffic capture to answer the following questions:
 What is the domain name of the users' custom site?
 
