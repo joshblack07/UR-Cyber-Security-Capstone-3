@@ -46,7 +46,7 @@ What is the username of the Windows user whose computer is infected?
 - [mattijs.derives](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wireshark_matthijs.PNG "Windows User")
 
 What are the IP addresses used in the actual infection traffic?
-- [185.243.115.84](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wireshark_infected3.PNG "Infection Traffic")
+- [185.243.115.84, 172.16.4.205](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wireshark_infected3.PNG "Infection Traffic")
 
 As a bonus, retrieve the desktop background of the Windows host.
 - [empty.gif%3fss&ss1img.png](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wireshark_background2.PNG "Desktop Background")
