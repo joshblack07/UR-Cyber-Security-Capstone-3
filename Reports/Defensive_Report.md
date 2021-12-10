@@ -83,9 +83,9 @@ The logs and alerts generated during the assessment suggest that this network is
 - Vulnerability 1: Excessive HTTP Errors
   - **Patch**: Password Hardening
     - Configure Windows Group Policies to have a strong password policy for accounts.
-    - Multi-Factor Authentication
+    - Implementation of Multi-Factor Authentication or CAPTCHA ([reference](https://owasp.org/www-community/controls/Blocking_Brute_Force_Attacks "HTTP_Error_Hardening")) 
   - **Why It Works**: Having a strong password will make it harder to guess or brute force.
-  - **Patch**: Wordpress-specific hardening
+  - **Patch**: WordPress-specific hardening ([reference](https://wordpress.org/support/article/hardening-wordpress/ "WordPress_Hardening")) 
     - Make sure wordpress is regularly updated
     - Implemention a security plugin such as [WordFence](https://www.wordfence.com/?gclid=CjwKCAiAksyNBhAPEiwAlDBeLFXu4fn-ttlQzFbdL4dR8QZGqN2yfi9_3OcO9-43tXo2y24LpgizxBoCbb8QAvD_BwE "WordFence_Website")
     - Disable public access to sections such as `/wp-admin` and `/wp-login.php`
