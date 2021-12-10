@@ -81,13 +81,24 @@ The alert CPU Usage Monitor is implemented as follows:
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
 
 - Vulnerability 1: Excessive HTTP Errors
-  - **Patch**: Configure Windows Group Policies to have a strong password policy for accounts.
+  - **Patch**: Password Hardening
+    - Configure Windows Group Policies to have a strong password policy for accounts.
+    - Multi-Factor Authentication
+  - **Why It Works**: Having a strong password will make it harder to guess or brute force.
+  - **Patch**: Wordpress-specific hardening
+    - Make sure wordpress is regularly updated
+    - Implemention a security plugin such as WordFence
+    - Disable public access to sections such as `/wp-admin` and `/wp-login.php`
   - **Why It Works**: Having a strong password will make it harder to guess or brute force.
   
 - Vulnerability 2: HTTP Request Size Monitor
-  - **Patch**: Use of modern intrusion prevention and threate management systems that include firewalls, VPN's, content filtering, and load balancing.  These operate together to provide continual and consistent network security, preventing denial of service attacks.  This encompasses everything from spotting any network traffice irregularities to stopping the attack.
-  - **Why It Works**: Monitoring request sizes of HTTP packets can minimize denial of service threats.
+  - **Patch**: Code Injection/DDOS Hardening
+    - Implementation of HTTP Request Limit on the web server
+    - Use of modern intrusion prevention and threat management systems that include firewalls, VPN's, content filtering, and load balancing.  
+  - **Why It Works**: Monitoring request sizes of HTTP packets can minimize denial of service threats. This will help reject these requests that are too large.
   
 - Vulnerability 3: CPU Usage Monitor
-  - **Patch**: Using Host Intrustion Prevention System to identify potential denial of service attacks.
-  - **Why It Works**: This preventative measure can alert and stop malware by monitoring processing behavior.
+  - **Patch**: Virus and Malware Hardening
+    - Using Host Intrustion Prevention System (HIDS) to identify potential denial of service attacks. (Example: Snort)
+    - Implementing at least one anti-virus software
+  - **Why It Works**: This preventative measure can alert and stop malware by monitoring processing behavior. 
