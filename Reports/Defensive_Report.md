@@ -99,6 +99,6 @@ The logs and alerts generated during the assessment suggest that this network is
   
 - Vulnerability 3: CPU Usage Monitor
   - **Patch**: Virus and Malware Hardening
-    - Using Host Intrustion Prevention System (HIDS) to identify potential denial of service attacks.
+    - Using Host Intrusion Prevention System (HIDS) to identify potential denial of service attacks.
     - Implementing at least one anti-virus software
   - **Why It Works**: This preventative measure can alert and stop malware by monitoring processing behavior. 
