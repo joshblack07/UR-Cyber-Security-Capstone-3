@@ -93,7 +93,7 @@ The logs and alerts generated during the assessment suggest that this network is
   
 - Vulnerability 2: HTTP Request Size Monitor
   - **Patch**: Code Injection/DDOS Hardening
-    - Implementation of HTTP Request Limit on the web server [reference](https://www.tomaz.me/2013/09/15/avoiding-ddos-attacks-caused-by-large-http-request-bodies-by-enforcing-a-hard-limit-in-your-web-server.html "HTTP_Request_Limit") 
+    - Implementation of HTTP Request Limit on the web server ([reference](https://www.tomaz.me/2013/09/15/avoiding-ddos-attacks-caused-by-large-http-request-bodies-by-enforcing-a-hard-limit-in-your-web-server.html "HTTP_Request_Limit"))
     - Use of modern intrusion prevention and threat management systems that include firewalls, VPN's, content filtering, and load balancing.  
   - **Why It Works**: Monitoring request sizes of HTTP packets can minimize denial of service threats. This will help reject these requests that are too large.
   
