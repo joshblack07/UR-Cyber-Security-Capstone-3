@@ -20,6 +20,8 @@ What is the IP address of the Domain Controller (DC) of the AD network?
 What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.
 
 - [june11.dll](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wireshark_june11.PNG "june11.dll")
+  - [TCP Stream](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wireshark_june11_tcp_stream.PNG "TCP_Stream")
+  - [HTTP Export](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wireshark_june11_http_export.PNG "HTTP Export")
  
 Upload the file to VirusTotal.com. What kind of malware is this classified as?
 
@@ -48,7 +50,8 @@ What are the IP addresses used in the actual infection traffic?
 
 As a bonus, retrieve the desktop background of the Windows host.
 - [empty.gif%3fss&ss1img.png](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wireshark_background2.PNG "Desktop Background")
-
+  - [HTTP object list](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/wireshark_background.PNG "HTTP_obecjt_list")
+  
 ## Illegal Downloads
 
 IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
