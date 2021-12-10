@@ -3,8 +3,7 @@
 Summary: This capstone outlines the process a security engineer would use to set alerts and analyze traffic using various systems. Vulnerable machines are attacked to test the alerts and produce auditable traffic.
 
 ## Capstone Breakdown
-- [Defensive Security Report](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Reports/Defensive_Report.md "Defensive Security Report")
-- [Defensive Security Presentation](https://docs.google.com/presentation/d/1HOS3WaAuj41-k0OOicajAxHPE40Lm1cNrikc-MJdvY0/edit#slide=id.g8bda237455_0_1314 "Defensive Security Report")
+- [Defensive Security Report](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Reports/Defensive_Report.md "Defensive Security Report") & [Defensive Security Presentation](https://docs.google.com/presentation/d/1HOS3WaAuj41-k0OOicajAxHPE40Lm1cNrikc-MJdvY0/edit#slide=id.g8bda237455_0_1314 "Defensive Security Report")
   - Refer back to [Capstone #2](https://github.com/joshblack07/UR-Cyber-Security-Red_vs_Blue "Capstone #2")  for Kibana alerts and thresholds.
   - Configure and implement alerts and thresholds. 
 - [Offensive Security Report](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Reports/Offensive_Report.md "Offensive Security Report")
