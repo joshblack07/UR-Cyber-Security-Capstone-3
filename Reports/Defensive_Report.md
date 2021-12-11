@@ -24,11 +24,7 @@
 
 The target of this attack was: `Target 1` IP: '192.168.1.110'
 
-Target 1 is an Apache web server and has SSH enabled, so `port 80` and `port 22` are possible ports of entry for attackers. As such, the following alerts have been implemented:
-
-### Monitoring the Targets
-
-Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
+Target 1 is an Apache web server and has SSH enabled, so `port 80` and `port 22` are possible ports of entry for attackers. As such, the following alerts have been implemented to monitor the targets:
 
 #### Excessive HTTP Errors
 
