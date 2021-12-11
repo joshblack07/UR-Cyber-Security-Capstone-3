@@ -35,10 +35,10 @@ The following vulnerabilities were identified on each target:
 #### CVE-1999-0013 Stolen Credentials [link](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0013 "reference")
 Stolen credentials from SSH clients via ssh-agent program, allowing other local users to access remote accounts belonging to the ssh-agent user.
 
-Guessed, weak, or default password: Access gained to user michael due to the weak or default password of “michael”.
-
 #### CWE-521: Weak Password Requirements [link](https://cwe.mitre.org/data/definitions/521.html "reference")
 The product does not require that users should have strong passwords, which makes it easier for attackers to compromise user accounts. Authentication mechanisms often rely on a memorized secret (also known as a password) to provide an assertion of identity for a user of a system. It is therefore important that this password be of sufficient complexity and impractical for an adversary to guess. The specific requirements around how complex a password needs to be depends on the type of system being protected. Selecting the correct password requirements and enforcing them through implementation are critical to the overall success of the authentication mechanism.
+
+Guessed, weak, or default password: Access gained to user michael due to the weak or default password of `michael`
 
 #### CWE-759: Use of a One-Way Hash without a Salt. [link](https://cwe.mitre.org/data/definitions/759.html "reference")
 The software uses a one-way cryptographic hash against an input that should not be reversible, such as a password, but the software does not also use a salt as part of the input. This makes it easier for attackers to pre-compute the hash value using dictionary attack techniques such as rainbow tables.
