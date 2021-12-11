@@ -87,7 +87,7 @@ The logs and alerts generated during the assessment suggest that this network is
   - **Why It Works**: Having a strong password will make it harder to guess or brute force.
   - **Patch**: WordPress-specific hardening ([reference](https://wordpress.org/support/article/hardening-wordpress/ "WordPress_Hardening")) 
     - Make sure wordpress is regularly updated
-    - Implemention a security plugin such as [WordFence](https://www.wordfence.com/?gclid=CjwKCAiAksyNBhAPEiwAlDBeLFXu4fn-ttlQzFbdL4dR8QZGqN2yfi9_3OcO9-43tXo2y24LpgizxBoCbb8QAvD_BwE "WordFence_Website")
+    - Implementation of a security plugin such as [WordFence](https://www.wordfence.com/?gclid=CjwKCAiAksyNBhAPEiwAlDBeLFXu4fn-ttlQzFbdL4dR8QZGqN2yfi9_3OcO9-43tXo2y24LpgizxBoCbb8QAvD_BwE "WordFence_Website")
     - Disable public access to sections such as `/wp-admin` and `/wp-login.php`
   - **Why It Works**: Having a strong password will make it harder to guess or brute force.
   
